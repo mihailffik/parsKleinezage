@@ -33,9 +33,9 @@ def ifs(link):
 
 bases()
 
-ADMINS = [1356524924, 1916071797]
+ADMINS = []
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token="6002813414:AAFFoTpEURzy1aFz6E7i9PPmXHoLN_uJPRI")
+bot = Bot(token="")
 dp = Dispatcher()
 
 @dp.message(CommandStart())
@@ -47,7 +47,7 @@ async def site():
     global s
     while True:
 
-        url = 'https://www.kleinanzeigen.de/s-zu-verschenken-tauschen/memmingen/c272l7277r5'
+        url = 'https://www.kleinanzeigen.de/s-zu-verschenken-tauschen/memmingen'
 
         request = urllib.request.Request(url)
         user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0'
